@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="library.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <link href="library.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="left">
+      <button id="addBtn">Add Book</button>
+      <div id="total">Total: 0</div>
+    </div>
 
-  <button id="addBtn">Add Book</button>
-
-  <div id="container">
-    <div class="card" id="card0">
-      <div id="cardtitle">Arse</div>
-      <div id="cardauthor">Face</div>
-      <div class="cardfooter">
-        <div id="cardyear">1984</div>
-        <div class="remove" id="rem0">Remove</div>
+    <div id="container">
+      <div class="card" id="card">
+        <div id="cardtitle">Arse</div>
+        <div id="cardauthor">Face</div>
+        <div class="cardfooter">
+          <div id="cardyear">1984</div>
+          <div class="remove" id="rem">Remove</div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="modal">
-    <div id="addBook">
-      <div class="input">
-        <label for="title">Title</label>
-        <br>
-        <input type="text" id="title">
+    <div id="modal">
+      <div id="addBook">
+        <div class="input">
+          <label for="title">Title</label>
+          <br />
+          <input type="text" id="title" />
+        </div>
+        <div class="input">
+          <label for="author">Author</label>
+          <br />
+          <input type="text" id="author" />
+        </div>
+        <div class="input">
+          <label for="year">Year</label>
+          <br />
+          <input type="text" id="year" />
+        </div>
+        <button id="submit">Add to Library</button>
       </div>
-      <div class="input">
-        <label for="author">Author</label>
-        <br>
-        <input type="text" id="author">
-      </div>
-      <div class="input">
-        <label for="year">Year</label>
-        <br>
-        <input type="text" id="year">
-      </div>
-      <button id="submit">Add to Library</button>
     </div>
-  </div>
 
-  <script src="library.js"></script>
-
-</body>
+    <script src="library.js"></script>
+  </body>
 </html>
